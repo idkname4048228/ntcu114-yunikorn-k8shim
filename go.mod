@@ -162,6 +162,7 @@ require (
 )
 
 replace (
+	github.com/apache/yunikorn-core => ../ntcu114-yunikorn-core
 	github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.12
 	github.com/petermattis/goid => github.com/petermattis/goid v0.0.0-20240327183114-c42a807a84ba
 	golang.org/x/crypto => golang.org/x/crypto v0.21.0

@@ -12,3 +12,4 @@
 *.key
 *.test
 /build.date
+yunikorn-logs.txt
