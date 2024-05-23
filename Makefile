@@ -87,7 +87,7 @@ DATE := $(shell echo "$(DATE)" > "$(BASE_DIR)/build.date" ; cat "$(BASE_DIR)/bui
 
 # Version parameters
 ifeq ($(VERSION),)
-VERSION := latest
+VERSION := 1.0
 endif
 
 # Kernel (OS) Name
@@ -181,7 +181,7 @@ endif
 # Image build parameters
 # This tag of the image must be changed when pushed to a public repository.
 ifeq ($(REGISTRY),)
-REGISTRY := apache
+REGISTRY := kayqi
 endif
 
 # Force Go modules even when checked out inside GOPATH

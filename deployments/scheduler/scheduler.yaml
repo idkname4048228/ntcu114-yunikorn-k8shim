@@ -37,7 +37,7 @@ spec:
       serviceAccountName: yunikorn-admin
       containers:
         - name: yunikorn-scheduler-k8s
-          image: apache/yunikorn:scheduler-amd64-latest
+          image: kayqi/yunikorn:scheduler-amd64-1.0
           env:
             - name: NAMESPACE
               valueFrom:
@@ -54,7 +54,7 @@ spec:
           ports:
             - containerPort: 9080
         - name: yunikorn-scheduler-web
-          image: apache/yunikorn:web-amd64-latest
+          image: apache/yunikorn:web-1.5.0
           imagePullPolicy: IfNotPresent
           resources:
             requests:
